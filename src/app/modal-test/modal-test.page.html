@@ -1,10 +1,17 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Modal</ion-title>
-    <ion-icon name="close"(click)="close()" float-right padding></ion-icon>
+      <ion-grid fixed>
+          <ion-row>
+            <ion-col offset="4" size="4">
+                <ion-title text-center>Modal</ion-title>
+            </ion-col>
+            <ion-col size="4">
+                <ion-icon class="icone-header" padding-right name="log-out" (click)="sair()" float-right ></ion-icon>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
   </ion-toolbar>
 </ion-header>
-
 <ion-content padding>
   <ion-grid fixed>
     <ion-row>

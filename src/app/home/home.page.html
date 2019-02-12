@@ -18,9 +18,19 @@
 <div class="ion-page" main>
   <ion-header>
     <ion-toolbar>
-      <ion-icon padding slot="start" name="menu" (click)="openMenu()"></ion-icon>
-      <ion-title>Home</ion-title>
-      <ion-icon padding name="log-out" float-right (click)="sair()"></ion-icon>
+      <ion-grid fixed>
+        <ion-row>
+          <ion-col size="4">
+              <ion-icon class="icone-header" padding-left name="menu" (click)="openMenu()" float-left ></ion-icon>
+          </ion-col>
+          <ion-col size="4">
+              <ion-title text-center>Home</ion-title>
+          </ion-col>
+          <ion-col size="4">
+              <ion-icon class="icone-header" padding-right name="log-out" (click)="sair()" float-right ></ion-icon>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-toolbar>
   </ion-header>
   <ion-content padding>
