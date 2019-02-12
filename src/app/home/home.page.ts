@@ -16,21 +16,27 @@ export class HomePage {
     this.menu.open('menu');
   }
   sair(){
-    this.router.navigate(['/login']);
+    this.router.navigate(['login']);
+    this.menu.close('menu');
   }
   goHome(){
     this.router.navigate(['home']);
+    this.menu.close('menu');
   }
   goLista(){
     this.router.navigate(['home', 'lista']);
+    this.menu.close('menu');
   }
   goSelect(){
     this.router.navigate(['home', 'select']);
+    this.menu.close('menu');
   }
   goImage(){
     this.router.navigate(['home', 'image']);
+    this.menu.close('menu');
   }
   goModal(){
     this.router.navigate(['home', 'modal']);
+    this.menu.close('menu');
   }
 }
