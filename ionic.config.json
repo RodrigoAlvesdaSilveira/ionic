@@ -1,5 +1,7 @@
 {
   "name": "Sistema",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
