@@ -11,31 +11,31 @@ export class HomePage {
 
   constructor(private menu: MenuController, private router: Router) {}
 
-  openMenu(){
+  openMenu() {
     this.menu.enable(true, 'menu');
     this.menu.open('menu');
   }
-  sair(){
+  sair() {
     this.router.navigate(['login']);
     this.menu.close('menu');
   }
-  goHome(){
+  goHome() {
     this.router.navigate(['home']);
     this.menu.close('menu');
   }
-  goLista(){
+  goLista() {
     this.router.navigate(['home', 'lista']);
     this.menu.close('menu');
   }
-  goSelect(){
+  goSelect() {
     this.router.navigate(['home', 'select']);
     this.menu.close('menu');
   }
-  goImage(){
+  goImage() {
     this.router.navigate(['home', 'image']);
     this.menu.close('menu');
   }
-  goModal(){
+  goModal() {
     this.router.navigate(['home', 'modal']);
     this.menu.close('menu');
   }

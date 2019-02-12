@@ -8,13 +8,12 @@ import { ModalController } from '@ionic/angular';
 })
 export class ModalTestPage implements OnInit {
 
-  constructor(private modalCtrl:ModalController) { }
+  constructor(private modalCtrl: ModalController) { }
 
   ngOnInit() {
   }
 
-  close()
-  {
+  close() {
     this.modalCtrl.dismiss();
   }
 }
