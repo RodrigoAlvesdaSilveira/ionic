@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Modal</ion-title>
+    <ion-icon name="close"(click)="close()" float-right padding></ion-icon>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12">Conteúdo Model</ion-col>
+      <ion-col size="12" margin-top>
+        <ion-button (click)="close()" expand="full">
+          OK
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
